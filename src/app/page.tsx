@@ -73,7 +73,7 @@ export default function Home() {
     <div className="flex flex-col items-center min-h-screen p-4">
       <nav className="w-full max-w-xl flex justify-center py-6">
         <a
-          href="https://github.com"
+          href="https://github.com/user-synax/is-this-a-good-idea"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 hover:opacity-90"
