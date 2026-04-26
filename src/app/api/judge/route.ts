@@ -31,7 +31,11 @@ export async function POST(request: NextRequest) {
       max_tokens: 150,
     });
 
-    const raw = completion.choices[0].message.content.trim();
+    const content = completion.choices[0]?.message?.content;
+    if (!content) {
+      throw new Error('No content in Groq response');
+    }
+    const raw = content.trim();
     let parsed;
     
     try {
