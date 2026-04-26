@@ -3,7 +3,7 @@ import connectDB from '@/lib/mongodb';
 import Idea from '@/models/Idea';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://your-domain.com';
+  const baseUrl = 'https://is-this-a-good-idea.netlify.app';
 
   try {
     await connectDB();

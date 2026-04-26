@@ -19,6 +19,7 @@ const bangers = Bangers({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://is-this-a-good-idea.netlify.app'),
   title: "Is This A Good Idea? - Get Brutally Honest Startup Verdicts",
   description: "Submit your startup or product idea and get a brutally honest AI-powered verdict. See if your idea is dead on arrival, needs work, actually viable, or ready to send it. Join our hall of fame and hall of shame.",
   keywords: ["startup ideas", "idea validator", "AI verdict", "startup feedback", "product ideas", "business ideas", "idea critic", "startup advice"],
@@ -28,6 +29,8 @@ export const metadata: Metadata = {
     description: "Submit your startup or product idea and get a brutally honest AI-powered verdict.",
     type: "website",
     locale: "en_US",
+    url: "https://is-this-a-good-idea.netlify.app",
+    siteName: "Is This A Good Idea?",
   },
   twitter: {
     card: "summary_large_image",
