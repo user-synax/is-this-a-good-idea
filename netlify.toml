@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/next"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+  targetPort = 3000
+
+# Environment variables (set these in Netlify dashboard or via netlify env:set)
+[build.environment]
+  NODE_VERSION = "20"
